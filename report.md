@@ -15,6 +15,10 @@ We aim to evaluate efficiency, accuracy, and generalization, and to understand t
 
 ## ⚙️ Model Comparison
 
+### Model architectures
+- Shallow CNN: Input → Conv2D(32) → MaxPooling2D → Flatten → Dense(64) → Dense(10)
+- Deep CNN: Input → Conv2D(32) → MaxPooling2D → Conv2D(64) → MaxPooling2D → Conv2D(128) → Flatten → Dense(128) → Dense(64) → Dense(10)
+
 | Metric                | Shallow CNN | Deep CNN |
 |-----------------------|-------------|----------|
 | Conv Layers           | 1           | 3        |

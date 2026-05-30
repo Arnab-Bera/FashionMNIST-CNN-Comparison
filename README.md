@@ -20,12 +20,14 @@ The goal is to analyze efficiency, accuracy, and generalization, and to understa
 - Reshaped images to `(28,28,1)` for CNN input
 
 ### Part 2: Shallow CNN
+- Architecture: Input → Conv2D(32) → MaxPooling2D → Flatten → Dense(64) → Dense(10)
 - 1 Conv2D layer + 1 MaxPooling2D
 - Flatten → Dense(64) → Output(10)
 - Faster training, fewer parameters
 - Showed signs of **underfitting**
 
 ### Part 3: Deep CNN
+- Architecture: Input → Conv2D(32) → MaxPooling2D → Conv2D(64) → MaxPooling2D → Conv2D(128) → Flatten → Dense(128) → Dense(64) → Dense(10)
 - 3 Conv2D layers + multiple MaxPooling2D
 - Dense(128) → Dense(64) → Output(10)
 - More parameters, longer training time
